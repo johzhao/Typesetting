@@ -90,14 +90,14 @@ class Typesetting(object):
 
 
 def main():
-	#t = Typesetting()
-	#t.ConvertFile('example3.txt', 'result.txt')
-	with open('example_ansi.txt', 'r') as f:
-		data = f.readlines()
-		for line in data:
-			line = line.decode('gbk')
+	t = Typesetting()
+	t.ConvertFile('example3.txt', 'result.txt')
+	#with open('example_ansi.txt', 'r') as f:
+		#data = f.readlines()
+		#for line in data:
+			#line = line.decode('gbk')
 			#line = line.encode('utf-8')
-			logging.debug(line)
+			#logging.debug(line)
 
 if __name__ == '__main__':
 	main()
